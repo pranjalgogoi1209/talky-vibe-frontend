@@ -1,0 +1,17 @@
+/* For Webkit browsers (Chrome, Safari) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.SigninForm {
+  .submitBtn {
+    background-color: #0b6380 !important;
+  }
+}
