@@ -1,0 +1,10 @@
+.homePage{
+    width: 100%;
+    height: 100svh;
+    background: url('../../../public/homePage/bg.png') no-repeat center center;
+    background-size: cover;
+
+    .homeWrapper{
+        border: 1px solid red;
+    }
+}
