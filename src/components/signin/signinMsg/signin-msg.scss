@@ -1,2 +1,44 @@
+// mobile veiw
 .SigninMsg {
+  height: 50%;
+  .greenTextureImg {
+    height: auto;
+  }
+  .signInBtn {
+    width: 50%;
+    color: var(--theme-color-1);
+    border-color: var(--theme-color-1);
+    &:hover {
+      background-color: var(--theme-color-1);
+      color: #fff;
+    }
+  }
+}
+
+// small tablet view
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .SigninMsg {
+    .signInBtn {
+      width: 35%;
+    }
+  }
+}
+
+// big tablet view
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .SigninMsg {
+    .signInBtn {
+      width: 30%;
+    }
+  }
+}
+
+// laptop view
+@media all and (min-width: 1200px) {
+  .SigninMsg {
+    height: 100%;
+    .signInBtn {
+      width: 45%;
+    }
+  }
 }

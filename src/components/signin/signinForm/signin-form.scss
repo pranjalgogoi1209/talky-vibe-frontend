@@ -1,3 +1,18 @@
+// mobile veiw
+.SigninForm {
+  height: 50%;
+  .submitBtn {
+    background-color: #0b6380;
+  }
+}
+
+// laptop view
+@media all and (min-width: 1200px) {
+  .SigninForm {
+    height: 100%;
+  }
+}
+
 /* For Webkit browsers (Chrome, Safari) */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -8,10 +23,4 @@ input[type="number"]::-webkit-inner-spin-button {
 /* For Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
-}
-
-.SigninForm {
-  .submitBtn {
-    background-color: #0b6380 !important;
-  }
 }

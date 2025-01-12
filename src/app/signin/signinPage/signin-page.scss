@@ -1,3 +1,16 @@
+// mobile view
 .SigninPage {
-  background-color: #0b6380;
+  background-color: var(--theme-color-1);
+  .signinContainer {
+    height: 90%;
+  }
+}
+
+// laptop view
+@media all and (min-width: 1200px) {
+  .SigninPage {
+    .signinContainer {
+      height: 70%;
+    }
+  }
 }

@@ -1,4 +1,14 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --theme-color-1: #0b6380;
+}
+
+@font-face {
+  font-family: "LazyDog";
+  src: url("/fonts/lazy_dog.ttf") format("truetype");
+  font-style: normal;
+}
+
+.lazyDogFont {
+  font-family: "LazyDog", "poppins";
+  letter-spacing: 0.1em;
 }
