@@ -1,28 +1,48 @@
 import React from "react";
 import "./signin-form.scss";
 
-export default function SigninForm() {
+export default function SigninForm({ isSigninAsGuest }) {
   return (
-    <div className="SigninForm col-xl border d-flex flex-column justify-content-center gap-1 gap-md-2 gap-lg-3 gap-xl-4">
-      <h1 className="lazyDogFont fw-bold text-center">SIGN IN</h1>
+    <div
+      className={`SigninForm col-xl border d-flex flex-column justify-content-center gap-1 gap-md-2 gap-lg-3 gap-xl-4 ${
+        isSigninAsGuest ? "flipSigninForm" : ""
+      }`}
+    >
+      <h1 className="lazyDogFont fw-bold text-center">
+        {isSigninAsGuest ? "SIGNIN AS GUEST" : "SIGNIN"}
+      </h1>
       <form className="d-flex flex-column gap-2 gap-md-3 gap-lg-4">
         {/* email */}
-        <input
-          type="email"
-          className="form-control p-md-3 p-xl-2"
-          id="email"
-          aria-describedby="emailHelp"
-          placeholder="Email"
-          required
-        />
+        {!isSigninAsGuest && (
+          <input
+            type="email"
+            className="form-control p-md-3 p-xl-2"
+            id="email"
+            aria-describedby="emailHelp"
+            placeholder="Email"
+            required
+          />
+        )}
 
         {/* password */}
-        <input
-          type="password"
-          className="form-control p-md-3 p-xl-2"
-          id="password"
-          placeholder="Password"
-        />
+        {!isSigninAsGuest && (
+          <input
+            type="password"
+            className="form-control p-md-3 p-xl-2"
+            id="password"
+            placeholder="Password"
+          />
+        )}
+
+        {/* username */}
+        {isSigninAsGuest && (
+          <input
+            type="text"
+            className="form-control p-md-3 p-xl-2"
+            id="username"
+            placeholder="Username"
+          />
+        )}
 
         {/* age and gender */}
         <div className="input-group d-flex gap-3 ">
@@ -50,7 +70,7 @@ export default function SigninForm() {
           type="submit"
           className="submitBtn btn w-100 fw-bold text-light p-md-3 p-xl-2"
         >
-          SUBMIT
+          {isSigninAsGuest ? "SIGNIN AS GUEST" : "SIGNIN"}
         </button>
       </form>
     </div>

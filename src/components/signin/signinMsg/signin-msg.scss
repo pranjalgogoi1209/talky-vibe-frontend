@@ -1,6 +1,7 @@
 // mobile veiw
 .SigninMsg {
   height: 50%;
+  transition: transform 0.3s ease-in-out;
   .greenTextureImg {
     height: auto;
   }
@@ -13,6 +14,9 @@
       color: #fff;
     }
   }
+}
+.flipSigninMsg {
+  transform: translateY(-100%);
 }
 
 // small tablet view
@@ -40,5 +44,8 @@
     .signInBtn {
       width: 45%;
     }
+  }
+  .flipSigninMsg {
+    transform: translateX(-140%);
   }
 }

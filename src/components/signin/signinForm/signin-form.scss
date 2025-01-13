@@ -1,15 +1,22 @@
 // mobile veiw
 .SigninForm {
   height: 50%;
+  transition: transform 0.3s ease-in-out;
   .submitBtn {
     background-color: #0b6380;
   }
+}
+.flipSigninForm {
+  transform: translateY(100%);
 }
 
 // laptop view
 @media all and (min-width: 1200px) {
   .SigninForm {
     height: 100%;
+  }
+  .flipSigninForm {
+    transform: translateX(82%);
   }
 }
 
