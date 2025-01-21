@@ -7,11 +7,11 @@ import greenTextureImg from "@/../public/signin/green-texture.png";
 export default function SigninMsg({ isSigninAsGuest, setIsSigninAsGuest }) {
   return (
     <div
-      className={`SigninMsg col-xl-5 border position-relative d-flex flex-column justify-content-center align-items-center ${
+      className={`SigninMsg col-xl-5 position-relative d-flex flex-column justify-content-center align-items-center ${
         isSigninAsGuest ? "flipSigninMsg" : ""
       }`}
     >
-      <div className="greenTextureImg h-100 border">
+      <div className="greenTextureImg h-100">
         <Image
           src={greenTextureImg}
           alt="greenTexture"

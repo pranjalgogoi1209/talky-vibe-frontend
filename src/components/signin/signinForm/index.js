@@ -4,7 +4,7 @@ import "./signin-form.scss";
 export default function SigninForm({ isSigninAsGuest }) {
   return (
     <div
-      className={`SigninForm col-xl border d-flex flex-column justify-content-center gap-1 gap-md-2 gap-lg-3 gap-xl-4 ${
+      className={`SigninForm col-xl d-flex flex-column justify-content-center gap-1 gap-md-2 gap-lg-3 gap-xl-4 ${
         isSigninAsGuest ? "flipSigninForm" : ""
       }`}
     >
